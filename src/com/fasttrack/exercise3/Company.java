@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Company extends Person {
     private List<Person> company;
-    private static Person manager;
+    private  Person manager;
 
     public Company(String name, int age, String position) {
         super(name, age, position);
@@ -65,7 +65,9 @@ public class Company extends Person {
     }
 
     public void employ(Person person){
-        company.add(person);
+        if(!(person.getPosition().equals("manager"))){
+            company.add(person);
+        }
     }
 
 }

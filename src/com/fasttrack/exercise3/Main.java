@@ -17,7 +17,7 @@ public class Main {
         System.out.println(company.getPersons("carpenter"));
         System.out.println(company.getPersonsOlder(31));
         System.out.println(company.getPerson("Mihai"));
-        company.employ(new Person("Fodor Traian", 58, "carpenter"));
+        company.employ(new Person("Fodor Traian", 58, "manager"));
         System.out.println(company);
 
 
