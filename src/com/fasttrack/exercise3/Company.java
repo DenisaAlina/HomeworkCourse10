@@ -67,6 +67,9 @@ public class Company extends Person {
     public void employ(Person person){
         if(!(person.getPosition().equals("manager"))){
             company.add(person);
+        }else{
+            company.remove(getManager());
+            company.add(person);
         }
     }
 
